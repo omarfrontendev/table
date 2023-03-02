@@ -1,0 +1,27 @@
+.search__btn {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  padding: 4px;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--main__blue);
+  border-radius: 4px;
+  z-index: 10;
+}
+.search__box {
+  all: unset;
+  display: flex;
+  width: 100%;
+  background: #fff;
+  color: #000;
+  padding: 0 2px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

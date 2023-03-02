@@ -1,0 +1,42 @@
+.page {
+  font-size: var(--ft__14);
+  color: var(--text__color);
+}
+.page__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 14px;
+  border-bottom: 0.1px solid #00000046;
+}
+.right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: var(--ft__18);
+}
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.add__new__client {
+  margin: 40px 0;
+  background-color: var(--baby__blue);
+  color: var(--white);
+  padding: 10px 24px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 4px;
+  transition: 0.3s linear;
+  opacity: 0.8;
+}
+.add__new__client:hover {
+  opacity: 1;
+  box-shadow: 1px 1px 18px 5px #1d273e41;
+}

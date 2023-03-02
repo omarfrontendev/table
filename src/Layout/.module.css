@@ -1,0 +1,28 @@
+.layout {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 0% 100%;
+  transition: 0.3s ease-in-out;
+}
+.layout.opened {
+  grid-template-columns: 22% 78%;
+}
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: var(--white);
+  padding: 0px 45px;
+}
+.page {
+  margin: 30px 45px;
+  background-color: var(--white);
+  padding: 20px;
+}
+.sidebar {
+  background-color: var(--main__blue);
+  color: var(--white);
+  position: relative;
+  overflow: hidden;
+  /* padding: 20px; */
+}

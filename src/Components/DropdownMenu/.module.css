@@ -1,0 +1,78 @@
+li.main__button {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+li.main__button > button {
+  transition: 0.3s linear;
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  opacity: 0.7;
+}
+li.main__button:first-child > button {
+  border-top: 0.1px solid #ffffff2d;
+}
+li.main__button:not(:last-child) > button {
+  border-bottom: 0.1px solid #ffffff2d;
+}
+li.main__button > button.active,
+li.main__button > button:hover {
+  background-color: var(--main__blue);
+  opacity: 1;
+}
+li.main__button > button > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+li.main__button > button .notify {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--baby__blue);
+  line-height: 20px;
+  text-align: center;
+  font-size: var(--ft__12);
+  font-weight: var(--ft__Bold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  flex-shrink: 0;
+}
+.drop__icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  transition: 0.3s linear;
+}
+.drop__icon.rotate {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.inside__menu {
+  background-color: #0c1115;
+  /* transition: 0.3s linear;
+  height: 0; */
+  overflow: hidden;
+}
+.inside__menu.opened {
+  height: 100%;
+}
+.inside__menu li {
+  display: flex;
+  gap: 4px;
+  padding: 10px 30px 10px 10px;
+  cursor: pointer;
+  transition: 0.3s linear;
+  align-items: center;
+}
+.inside__menu li:hover {
+  background-color: var(--baby__blue);
+}
